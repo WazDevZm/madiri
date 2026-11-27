@@ -285,6 +285,13 @@
   .contact .btns { justify-content: center; }
   .contact .btn.dark:hover { background: #fff; color: var(--ink); }
   .contact .btn.light { background: rgba(255,255,255,.18); border-color: rgba(255,255,255,.5); color: #fff; }
+  .wa-float {
+    position: fixed; z-index: 48; right: 16px; bottom: calc(16px + env(safe-area-inset-bottom));
+    width: 58px; height: 58px; border-radius: 50%; background: #25d366; color: #fff;
+    display: grid; place-items: center; box-shadow: 0 12px 28px rgba(37, 211, 102, .4);
+    transition: transform .25s var(--ease); animation: bob 4s ease-in-out infinite;
+  }
+  .wa-float:hover { transform: scale(1.08); }
   footer { padding: 26px 0 40px; text-align: center; color: var(--muted); font-size: 14px; }
 
   /* ---------- Motion ---------- */
@@ -323,7 +330,7 @@
     <li><a href="#projects">Projects</a></li>
     <li><a href="#gallery">Gallery</a></li>
   </ul>
-  <a class="nav-cta" href="#contact">Let's talk ↗</a>
+  <a class="nav-cta" href="https://wa.me/260976010774?text=Hi%20Madiri%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect." target="_blank" rel="noopener">Let's talk ↗</a>
   <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span><i></i><i></i></span></button>
 </nav>
 <div class="sheet" id="sheet">
@@ -333,6 +340,7 @@
   <a href="#projects">Projects <span>→</span></a>
   <a href="#gallery">Gallery <span>→</span></a>
   <a href="#contact">Contact <span>→</span></a>
+  <a href="https://wa.me/260976010774?text=Hi%20Madiri%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect." target="_blank" rel="noopener" style="background:#25d366;color:#fff">Chat on WhatsApp <span style="color:#fff">↗</span></a>
 </div>
 
 <!-- Hero -->
@@ -348,7 +356,7 @@
         <span class="role-chip pink">🔬 Aspiring Scientist</span>
       </div>
       <div class="btns reveal" style="--d:.4s">
-        <a class="btn dark" href="#contact">Get in touch <span class="arrow">→</span></a>
+        <a class="btn dark" href="https://wa.me/260976010774?text=Hi%20Madiri%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect." target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg> Let's talk <span class="arrow">→</span></a>
         <a class="btn light" href="#education">View my journey</a>
       </div>
     </div>
@@ -512,13 +520,14 @@
   <div class="wrap">
     <span class="kicker reveal" style="color:#fff">Contact</span>
     <h2 class="reveal" style="--d:.08s">Let's build something <span class="serif">brilliant.</span></h2>
-    <p class="reveal" style="--d:.14s">Open to research opportunities, internships, mentorship and conversations about biology and innovation.</p>
+    <p class="reveal" style="--d:.14s">Open to research opportunities, internships, mentorship and conversations about biology and innovation. Message me on WhatsApp for more info: <strong style="white-space:nowrap">+260 976 010 774</strong></p>
     <div class="btns reveal" style="--d:.2s">
-      <a class="btn dark" href="mailto:your.email@example.com">Email me <span class="arrow">→</span></a>
+      <a class="btn dark" href="https://wa.me/260976010774?text=Hi%20Madiri%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect." target="_blank" rel="noopener"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg> Chat on WhatsApp <span class="arrow">→</span></a>
       <a class="btn light" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
     </div>
   </div>
 </section>
+<a class="wa-float" href="https://wa.me/260976010774?text=Hi%20Madiri%2C%20I%20saw%20your%20portfolio%20and%20would%20love%20to%20connect." target="_blank" rel="noopener" aria-label="Chat with Madiri on WhatsApp"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3.7.3 1.2.5 1.6.6.7.2 1.3.2 1.8.1.6-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3ZM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.6 0-3.2-.4-4.5-1.3l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Z"/></svg></a>
 <footer>© <span id="year"></span> Madiri Tariro · Biology, The Copperbelt University<br><small style="font-size:12px">Photos: Unsplash</small></footer>
 
 <script>
